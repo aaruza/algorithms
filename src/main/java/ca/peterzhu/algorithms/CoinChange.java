@@ -36,7 +36,7 @@ public class CoinChange {
 						// current solution, then change the solution to use
 						// this and the result to this coin
 						if (smallestCoin + t[i - currCoin] < t[i]) {
-							t[i] = smallestCoin + t[i - currCoin];
+							t[i] = 1 + t[i - currCoin];
 							result[i] = c;
 						}
 					}
